@@ -1,5 +1,5 @@
 
-fname = "OptimiseActivationFunction/avgs.json";
+fname = "OptimiseNetworkTopology/lows.json";
 
 if exist(fname, 'file') == 2
     fid = fopen(fname);
@@ -15,7 +15,7 @@ if exist(fname, 'file') == 2
     end
     
     fittestAgentsJSON = jsonencode(fittestAgents);
-    fname = "30_average_solutions.json";
+    fname = "30_worst_solutions.json";
 
     fid = fopen(fname, 'w');
     fwrite(fid, fittestAgentsJSON, 'char');

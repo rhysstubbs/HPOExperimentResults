@@ -1,5 +1,5 @@
-fname1 = "VanillaResults/30_average_solutions.json";
-fname2 = "OptimiseActivationFunction/30_average_solutions.json";
+fname1 = "VanillaResults/totalTimes.json";
+fname2 = "OptimiseNetworkTopology/totalTimes.json";
 
 if exist(fname1, 'file') == 2 && exist(fname2, 'file') == 2
     fid1 = fopen(fname1);
